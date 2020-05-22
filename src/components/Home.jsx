@@ -6,10 +6,10 @@ export default function Home() {
         <div>
             <h2>Home Page</h2>
             <Link to='/order'>
-                <button>Order</button>
+                <button className='order'>Order</button>
             </Link>
             <Link to='/help'>
-                <button>Help</button>
+                <button className='help'>Help</button>
             </Link>
         </div>
     )

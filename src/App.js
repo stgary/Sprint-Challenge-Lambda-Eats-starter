@@ -136,7 +136,6 @@ const initialFormValues = {
           })
       }
 
-      
       <Route exact path='/'>
         <Home />
       </Route>
@@ -144,7 +143,7 @@ const initialFormValues = {
       <Route exact path='/help'>
         <Help />
       </Route>
-
+      
     </div>
     )
   }

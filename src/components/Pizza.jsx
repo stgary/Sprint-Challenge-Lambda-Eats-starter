@@ -3,11 +3,9 @@ import React from 'react'
 function Pizza(props) {
     
     const { details } = props
-
-    console.log(details.name)
         
   return (
-    <div className='container'>
+    <div className='order'>
         <h1>Your Order:&nbsp;</h1>
         <h2>{details.name}</h2>
         <p>Crust:&nbsp;{details.crust}</p>
