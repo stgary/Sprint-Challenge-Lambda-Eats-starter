@@ -8,7 +8,7 @@ export default function Home() {
             <Link to='/order'>
                 <button>Order</button>
             </Link>
-            <Link>
+            <Link to='/order'>
                 <button>Pizza</button>
             </Link>
         </div>
