@@ -8,10 +8,11 @@ function Pizza(props) {
         
   return (
     <div className='container'>
-      <h2>{details.name}</h2>
-      <p>Crust:&nbsp;{details.crust}</p>
-      <p>Size:&nbsp;{details.size}</p>
-      <p>Comments:&nbsp;{details.comments}</p>
+        <h1>Your Order:&nbsp;</h1>
+        <h2>{details.name}</h2>
+        <p>Crust:&nbsp;{details.crust}</p>
+        <p>Size:&nbsp;{details.size}</p>
+        <p>Comments:&nbsp;{details.comments}</p>
 
       {
         !!details.toppings && !!details.toppings.length &&

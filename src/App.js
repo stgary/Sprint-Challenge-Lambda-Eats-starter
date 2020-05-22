@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Pizza from './components/Pizza'
 import PizzaForm from './components/PizzaForm'
+import Home from './components/Home'
 import formSchema from './validation/formSchema'
 import axios from 'axios'
 import * as yup from 'yup'
+import { Route } from 'react-router-dom'
 
 const initialFormValues = {
     name: '',
@@ -113,6 +115,7 @@ const initialFormValues = {
     <div className='container'>
       <header><h1>Make Your Own Pizza</h1></header>
 
+    <Route exact path='/order'>
       <PizzaForm
           values={formValues}
           onInputChange={onInputChange}
@@ -121,7 +124,9 @@ const initialFormValues = {
           errors={formErrors}
           onCheckboxChange={onCheckboxChange}
       />
+    </Route>
 
+    <Route exact path='/pizza'>
       {
           order.map(ord => {
             console.log(ord)
@@ -130,6 +135,12 @@ const initialFormValues = {
           )
           })
       }
+    </Route>
+      
+      <Route exact path='/'>
+        <Home />
+      </Route>
+
     </div>
     )
   }
