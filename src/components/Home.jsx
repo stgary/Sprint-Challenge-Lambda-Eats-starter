@@ -8,8 +8,8 @@ export default function Home() {
             <Link to='/order'>
                 <button>Order</button>
             </Link>
-            <Link to='/pizza'>
-                <button>Pizza</button>
+            <Link to='/help'>
+                <button>Help</button>
             </Link>
         </div>
     )

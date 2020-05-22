@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Pizza from './components/Pizza'
 import PizzaForm from './components/PizzaForm'
 import Home from './components/Home'
+import Help from './components/Help'
 import formSchema from './validation/formSchema'
 import axios from 'axios'
 import * as yup from 'yup'
@@ -126,7 +127,6 @@ const initialFormValues = {
       />
     </Route>
 
-    <Route exact path='/pizza'>
       {
           order.map(ord => {
             console.log(ord)
@@ -135,10 +135,14 @@ const initialFormValues = {
           )
           })
       }
-    </Route>
+
       
       <Route exact path='/'>
         <Home />
+      </Route>
+
+      <Route exact path='/help'>
+        <Help />
       </Route>
 
     </div>
