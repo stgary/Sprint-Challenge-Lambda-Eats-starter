@@ -35,7 +35,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Choice Of Size
+        <label>Choice Of Size:&nbsp;
           <select
             onChange={onInputChange}
             value={values.size}
@@ -51,7 +51,7 @@ export default function PizzaForm(props) {
 
         <h6>Choice Of Crust</h6>
 
-        <label>Original
+        <label>Original:&nbsp;
           <input
             type='radio'
             name='crust'
@@ -60,7 +60,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Garlic
+        <label>Garlic:&nbsp;
           <input
             type='radio'
             name='crust'
@@ -69,7 +69,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Butter
+        <label>Butter:&nbsp;
           <input
             type='radio'
             name='crust'
@@ -80,7 +80,7 @@ export default function PizzaForm(props) {
 
         <h6>Choice Of Toppings</h6>
 
-        <label>Sausage
+        <label>Sausage:&nbsp;
           <input
             type='checkbox'
             name='sausage'
@@ -89,7 +89,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Pepperoni
+        <label>Pepperoni:&nbsp;
           <input
             type='checkbox'
             name='pepperoni'
@@ -98,7 +98,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Pineapple
+        <label>Pineapple:&nbsp;
           <input
             type='checkbox'
             name='pineapple'
@@ -107,7 +107,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Bacon
+        <label>Bacon:&nbsp;
           <input
             type='checkbox'
             name='bacon'
@@ -116,7 +116,7 @@ export default function PizzaForm(props) {
           />
         </label>
 
-        <label>Special Instructions
+        <label>Special Instructions:&nbsp;
             <input 
                 type='textarea'
                 name='comments'

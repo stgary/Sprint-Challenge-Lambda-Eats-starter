@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-// import Pizza from './components/pizza'
-// import PizzaForm from './components/PizzaForm'
-// import formSchema from '../validation/formSchema'
-// import axios from 'axios'
-// import * as yup from 'yup'
+import Pizza from './components/Pizza'
+import PizzaForm from './components/PizzaForm'
+import formSchema from './validation/formSchema'
+import axios from 'axios'
+import * as yup from 'yup'
 
 const initialFormValues = {
     name: '',
@@ -36,7 +36,7 @@ const initialFormValues = {
     const [disabled, setDisabled] = useState(initialDisabled)
 
     const postOrder = newOrder => {
-        axios.post('url', newOrder)
+        axios.post('https://reqres.in/api/order', newOrder)
           .then(res => {
             setOrder([res.data, ...order])
           })
@@ -124,8 +124,9 @@ const initialFormValues = {
 
       {
           order.map(ord => {
+            console.log(ord)
           return (
-              <Pizza key={ord.id} details={order} />
+              <Pizza key={ord.id} details={ord} />
           )
           })
       }
