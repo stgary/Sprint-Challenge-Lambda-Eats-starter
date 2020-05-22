@@ -110,27 +110,25 @@ const initialFormValues = {
   }, [formValues])
 
   return (
-        <div className='container'>
-        <header><h1>Make Your Own Pizza</h1></header>
+    <div className='container'>
+      <header><h1>Make Your Own Pizza</h1></header>
 
-        <PizzaForm
-            values={formValues}
-            onInputChange={onInputChange}
-            onSubmit={onSubmit}
-            disabled={disabled}
-            errors={formErrors}
-            onCheckboxChange={onCheckboxChange}
-        />
+      <PizzaForm
+          values={formValues}
+          onInputChange={onInputChange}
+          onSubmit={onSubmit}
+          disabled={disabled}
+          errors={formErrors}
+          onCheckboxChange={onCheckboxChange}
+      />
 
-        {
-            order.map(ord => {
-            return (
-                <Pizza key={ord.id} details={order} />
-            )
-            })
-        }
-        </div>
+      {
+          order.map(ord => {
+          return (
+              <Pizza key={ord.id} details={order} />
+          )
+          })
+      }
+    </div>
     )
   }
-  
-export default App;
